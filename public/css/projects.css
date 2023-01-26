@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.amh {
+    display: none;
+}
+
+.shelf1 {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 3vh;
+    margin-top: 1%;
+    background-color: #0088ccc7;
+}
+
+.shelf1 .languagesCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.shelf1 .languagesCon div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #ffffff;
+    margin-right: 2%;
+    cursor: pointer;
+    border-top: 4px solid transparent;
+}
+
+.shelf1 .languagesCon .current {
+    border-top: 4px solid #4d4d4d;
+}
+
+.shelf1 .languagesCon .idle:hover {
+    border-top: 4px solid #4d4d4d;
+}
+
+.shelf2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 15vh;
+    margin-top: 0.5%;
+}
+
+.shelf2 img {
+    width: 250px;
+    height: 140px;
+}
+
+.shelf2 ul {
+    width: 40%;
+}
+
+.shelf2 ul li {
+    margin-left: 4%;
+}
+
+.shelf2 ul .current {
+    border-bottom: 4px solid #4d4d4d;
+}
+
+.shelf2 ul li a {
+    font-size: 1.1vw;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    cursor: pointer;
+}
+
+.shelf2 ul li a:hover {
+    color: #0088CC;
+}
+
+.shelf2 ul li button {
+    font-size: 1.1vw;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #0088CC;
+}
+
+.shelf3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 40vh;
+    margin-top: 0.5%;
+}
+
+.shelf3 img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin: auto;
+    filter: brightness(70%);
+}
+
+.shelf3 p {
+    position: absolute;
+    font-size: 2.7vw;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+.shelf4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    margin-top: 0.5%;
+}
+
+.shelf4 .level1 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 5%;
+}
+
+.shelf4 .level1 .qoute {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin: auto;
+}
+
+.shelf4 .level1 .qoute span {
+    color: #0088CC;
+}
+
+.shelf4 .level2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+
+.shelf4 .level2 .left {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.shelf4 .level2 .left img {
+    width: 90%;
+    height: 430px;
+    margin: auto;
+}
+
+.shelf4 .level2 .right {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 3%;
+}
+
+.shelf4 .level2 .right .top {
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #0088CC;
+}
+
+.shelf4 .level2 .right .center {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.shelf4 .level2 .right .bottom {
+    font-size: 1vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.shelf4 .level2 .right .bottom:hover {
+    text-decoration: underline;
+}
+
+.shelf4 .level3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    margin-top: 7%;
+}
+
+.shelf4 .level3 .left {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 3%;
+}
+
+.shelf4 .level3 .left .top {
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #0088CC;
+}
+
+.shelf4 .level3 .left .center {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.shelf4 .level3 .left .bottom {
+    font-size: 1vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.shelf4 .level3 .left .bottom:hover {
+    text-decoration: underline;
+}
+
+.shelf4 .level3 .right {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.shelf4 .level3 .right img {
+    width: 90%;
+    height: 430px;
+    margin: auto;
+}
+
+.shelf4 .level4 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    margin-top: 9%;
+}
+
+.shelf4 .level4 .left {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.shelf4 .level4 .left img {
+    width: 90%;
+    height: 430px;
+    margin: auto;
+}
+
+.shelf4 .level4 .right {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 3%;
+}
+
+.shelf4 .level4 .right .top {
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #0088CC;
+}
+
+.shelf4 .level4 .right .center {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.shelf4 .level4 .right .bottom {
+    font-size: 1vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.shelf4 .level4 .right .bottom:hover {
+    text-decoration: underline;
+}
+
+.shelf4 .level5 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    margin-top: 9%;
+}
+
+.shelf4 .level5 .left {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 3%;
+}
+
+.shelf4 .level5 .left .top {
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #0088CC;
+}
+
+.shelf4 .level5 .left .center {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.shelf4 .level5 .left .bottom {
+    font-size: 1vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.shelf4 .level5 .left .bottom:hover {
+    text-decoration: underline;
+}
+
+.shelf4 .level5 .right {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.shelf4 .level5 .right img {
+    width: 90%;
+    height: 430px;
+    margin: auto;
+}
+
+.shelf4 .level6 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    margin-top: 9%;
+}
+
+.shelf4 .level6 .left {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.shelf4 .level6 .left img {
+    width: 90%;
+    height: 430px;
+    margin: auto;
+}
+
+.shelf4 .level6 .right {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 3%;
+}
+
+.shelf4 .level6 .right .top {
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #0088CC;
+}
+
+.shelf4 .level6 .right .center {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.shelf4 .level6 .right .bottom {
+    font-size: 1vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.shelf4 .level6 .right .bottom:hover {
+    text-decoration: underline;
+}
+
+.shelf6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    width: 90%;
+    height: 20vh;
+    margin-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #d6d6d6;
+}
+
+.shelf6 .emailUpdatesLink {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.shelf6 .emailUpdatesLink p {
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: 700;
+    color: #000000;
+    margin: auto;
+}
+
+.shelf6 .emailUpdatesLink p i {
+    font-size: 0.85vw;
+}
+
+.shelf6 .slogan {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    color: #000000;
+    margin: auto;
+    cursor: default;
+}
+
+.shelf6 .socialLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+}
+
+.shelf6 .socialLinks i {
+    font-size: 1.5vw;
+    cursor: pointer;
+}

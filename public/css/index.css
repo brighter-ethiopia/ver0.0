@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.amh {
+    display: none;
+}
+
+.shelf1 {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 3vh;
+    margin-top: 1%;
+    background-color: #0088ccc7;
+}
+
+.shelf1 .languagesCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.shelf1 .languagesCon div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #ffffff;
+    margin-right: 2%;
+    cursor: pointer;
+    border-top: 4px solid transparent;
+}
+
+.shelf1 .languagesCon .current {
+    border-top: 4px solid #4d4d4d;
+}
+
+.shelf1 .languagesCon .idle:hover {
+    border-top: 4px solid #4d4d4d;
+}
+
+.shelf2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 15vh;
+    margin-top: 0.5%;
+}
+
+.shelf2 img {
+    width: 250px;
+    height: 140px;
+}
+
+.shelf2 ul {
+    width: 40%;
+}
+
+.shelf2 ul li {
+    margin-left: 3%;
+}
+
+.shelf2 ul .current {
+    border-bottom: 4px solid #4d4d4d;
+}
+
+.shelf2 ul li a {
+    font-size: 1.1vw;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    cursor: pointer;
+}
+
+.shelf2 ul li a:hover {
+    color: #0088CC;
+}
+
+.shelf2 ul li button {
+    font-size: 1.1vw;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #0088CC;
+}
+
+.shelf3 {
+    display: flex;
+    position: relative;
+    left: 12.5%;
+    width: 75%;
+    height: 65vh;
+    margin-top: 0.5%;
+}
+
+.shelf3 img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
+}
+
+.shelf3 .overlay {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background-color: #0088ccc7;
+}
+
+.shelf3 .overlay p {
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Solitreo', cursive;
+    color: #ffffff;
+    margin: auto;
+    cursor: default;
+}
+
+.shelf4 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 55vh;
+    margin-top: 1%;
+}
+
+.shelf4 .level1 {
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+
+.shelf4 .level1 p {
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: 'Solitreo', cursive;
+    color: #000000;
+    margin: auto;
+}
+
+.shelf4 .level2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.shelf4 .level2 .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 2%;
+}
+
+.shelf4 .level2 .row .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.shelf4 .level2 .row .column i {
+    font-size: 4vw;
+    color: #0088CC;
+    cursor: pointer;
+}
+
+.shelf4 .level2 .row .column i:hover {
+    font-size: 5vw;
+}
+
+.shelf4 .level2 .row .column i:hover + p {
+    font-size: 1.5vw;
+}
+
+.shelf4 .level2 .row .column p {
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #0088CC;
+    cursor: pointer;
+    margin-top: 4%;
+}
+
+.shelf5 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 85vh;
+}
+
+.shelf5 .level1 {
+    display: flex;
+    width: 100%;
+    height: 3%;
+}
+
+.shelf5 .level1 p {
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: 'Solitreo', cursive;
+    color: #000000;
+    margin: auto;
+}
+
+.shelf5 .level2 {
+    display: flex;
+    width: 100%;
+    height: 18%;
+}
+
+.shelf5 .level2 p {
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #000000;
+    margin: auto;
+}
+
+.shelf5 .level3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+}
+
+.shelf5 .level3 button {
+    height: 100%;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-left: 2%;
+    background-color: #0088CC;
+}
+
+.shelf5 .level3 button:hover {
+    color: #000000;
+}
+
+.shelf5 .level4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 67%;
+    margin-top: 2%;
+}
+
+.shelf5 .level4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.shelf6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    width: 90%;
+    height: 40vh;
+    margin-top: 4%;
+}
+
+.shelf6 .level1 {
+    display: flex;
+    width: 100%;
+    height: 15%;
+}
+
+.shelf6 .level1 p {
+    font-size: 1.9vw;
+    font-weight: 700;
+    font-family: 'Solitreo', cursive;
+    margin: auto;
+}
+
+.shelf6 .level2 {
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+
+.shelf6 .level2 .missionInfoCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+}
+
+.shelf6 .level2 .missionInfoCon .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33.33%;
+    height: 80%;
+    padding: 2%;
+}
+
+.shelf6 .level2 .missionInfoCon .border-right {
+    border-right: 2.5px solid #0088CC;
+}
+
+.shelf6 .level2 .missionInfoCon .column .top {
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+
+.shelf6 .level2 .missionInfoCon .column .bottom {
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.shelf6 .level3 {
+    display: flex;
+    width: 100%;
+    height: 15%;
+}
+
+.shelf6 .level3 button {
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: auto;
+    background-color: #0088CC;
+}
+
+.shelf6 .level3 button:hover {
+    color: #000000;
+}
+
+.shelf7 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    width: 90%;
+    height: 20vh;
+    margin-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #d6d6d6;
+}
+
+.shelf7 .emailUpdatesLink {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.shelf7 .emailUpdatesLink p {
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: 700;
+    color: #000000;
+    margin: auto;
+}
+
+.shelf7 .emailUpdatesLink p i {
+    font-size: 0.85vw;
+}
+
+.shelf7 .slogan {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    color: #000000;
+    margin: auto;
+    cursor: default;
+}
+
+.shelf7 .socialLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+}
+
+.shelf7 .socialLinks i {
+    font-size: 1.5vw;
+    cursor: pointer;
+}
