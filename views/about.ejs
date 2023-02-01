@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brighter Ethiopia</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -28,141 +30,186 @@
 </head>
 
 <body>
-
-
-    <%if (status=='loggedIn' ) {%>
-        <script>
-            location.href = '/about'
-        </script>
-        <%}else{%>
-            <div class="shelf1">
-                <div class="languagesCon">
-                    <div class="lan-en current">
-                        English
-                    </div>
-                    <div class="lan-amh idle">
-                        አማርኛ
-                    </div>
-                </div>
+    <div class="shelf1">
+        <div class="languagesCon">
+            <div class="lan-en current">
+                English
             </div>
-            <div class="shelf2">
+            <div class="lan-amh idle">
+                አማርኛ
+            </div>
+        </div>
+    </div>
+    <div class="shelf2">
+        <img class="mainLogo"
+            src="/img/logos/brighter-ethiopia-high-resolution-logo-color-on-transparent-background.png" />
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link homeBtn en">Home</a>
+                <a class="nav-link homeBtn amh">ቤት</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link projectsBtn en">Projects</a>
+                <a class="nav-link projectsBtn amh">ፕሮጀክቶች</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link current aboutUsBtn en">About Us</a>
+                <a class="nav-link current aboutUsBtn amh">ስለ እኛ</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn donateBtn en">
+                    Donate
+                </button>
+                <button class="btn donateBtn amh">
+                    አሁን ይለግሱ
+                </button>
+            </li>
+        </ul>
+        <div class="donateBtnXsCon">
+            <button class="btn donateBtn en">
+                Donate
+            </button>
+            <button class="btn donateBtn amh">
+                አሁን ይለግሱ
+            </button>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li class="en"><a class="dropdown-item homeBtn">Home</a></li>
+                <li class="amh"><a class="dropdown-item homeBtn">ቤት</a></li>
+                <li class="en"><a class="dropdown-item projectsBtn">Projects</a></li>
+                <li class="amh"><a class="dropdown-item projectsBtn">ፕሮጀክቶች</a></li>
+                <li class="en"><a class="dropdown-item aboutUsBtn">About Us</a></li>
+                <li class="amh"><a class="dropdown-item aboutUsBtn">ስለ እኛ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="shelf3">
+        <img
+            src="https://images.pexels.com/photos/1535907/pexels-photo-1535907.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+    </div>
+    <div class="shelf4">
+        <div class="textCon">
+            <p class="en">About Us</p>
+            <p class="amh">ስለ እኛ</p>
+        </div>
+    </div>
+    <div class="shelf5">
+        <div class="textCon">
+            <p class="en">UNICEF works in the world’s toughest places to reach the most disadvantaged children and
+                adolescents – and to protect the rights of every child, everywhere. Across more than 190 countries and
+                territories, we do whatever it takes to help children survive, thrive and fulfill their potential, from
+                early childhood through adolescence.
+                <br />
+                <br />
+                The world’s largest provider of vaccines, we support child health and nutrition, safe water and
+                sanitation, quality education and skill building, HIV prevention and treatment for mothers and babies,
+                and the protection of children and adolescents from violence and exploitation.
+                <br />
+                <br />
+                Before, during and after humanitarian emergencies, UNICEF is on the ground, bringing lifesaving help and
+                hope to children and families. Non-political and impartial, we are never neutral when it comes to
+                defending children’s rights and safeguarding their lives and futures.
+                <br />
+                <br />
+                And we never give up.
+            </p>
+            <p class="amh">UNICEF works in the world’s toughest places to reach the most disadvantaged children and
+                adolescents – and to protect the rights of every child, everywhere. Across more than 190 countries and
+                territories, we do whatever it takes to help children survive, thrive and fulfill their potential, from
+                early childhood through adolescence.
+                <br />
+                <br />
+                The world’s largest provider of vaccines, we support child health and nutrition, safe water and
+                sanitation, quality education and skill building, HIV prevention and treatment for mothers and babies,
+                and the protection of children and adolescents from violence and exploitation.
+                <br />
+                <br />
+                Before, during and after humanitarian emergencies, UNICEF is on the ground, bringing lifesaving help and
+                hope to children and families. Non-political and impartial, we are never neutral when it comes to
+                defending children’s rights and safeguarding their lives and futures.
+                <br />
+                <br />
+                And we never give up.
+            </p>
+        </div>
+    </div>
+    <div class="infoConXs">
+        <p class="top en">How we work</p>
+        <p class="top amh">የኣሰራራችን መንገድ</p>
+        <p class="bottom en">UNICEF works with the United Nations and its agencies to make sure that children are on the
+            global agenda. UNICEF strikes a balance between thorough research and practical solutions for children.</p>
+        <p class="bottom amh">UNICEF works with the United Nations and its agencies to make sure that children are on
+            the global agenda. UNICEF strikes a balance between thorough research and practical solutions for children.
+        </p>
+    </div>
+    <div class="shelf6">
+        <div class="level1">
+            <p class="top en">How we work</p>
+            <p class="top amh">የኣሰራራችን መንገድ</p>
+            <p class="bottom en">UNICEF works with the United Nations and its agencies to make sure that children are on
+                the global agenda. UNICEF strikes a balance between thorough research and practical solutions for
+                children.</p>
+            <p class="bottom amh">UNICEF works with the United Nations and its agencies to make sure that children are
+                on the global agenda. UNICEF strikes a balance between thorough research and practical solutions for
+                children.</p>
+        </div>
+        <div class="level2">
+            <div class="column">
                 <img
-                    src="/img/logos/brighter-ethiopia-high-resolution-logo-color-on-transparent-background.png" />
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link homeBtn en">Home</a>
-                        <a class="nav-link homeBtn amh">ቤት</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link projectsBtn en">Projects</a>
-                        <a class="nav-link projectsBtn amh">ፕሮጀክቶች</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link current aboutUsBtn en">About Us</a>
-                        <a class="nav-link current aboutUsBtn amh">ስለ እኛ</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn donateBtn en">
-                            Donate
-                        </button>
-                        <button class="btn donateBtn amh">
-                            አሁን ይለግሱ
-                        </button>
-                    </li>
-                </ul>
+                    src="https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                <p class="top en">blah blah blah</p>
+                <p class="top amh">blah blah blah</p>
+                <p class="bottom en">blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                <p class="bottom amh">blah blah blah blah blah blah blah blah blah blah blah blah</p>
             </div>
-            <div class="shelf3">
-                <img src="https://images.pexels.com/photos/1535907/pexels-photo-1535907.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+            <div class="column">
+                <img src="https://images.pexels.com/photos/157827/pexels-photo-157827.jpeg" />
+                <p class="top en">blah blah blah</p>
+                <p class="top amh">blah blah blah</p>
+                <p class="bottom en">blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                <p class="bottom amh">blah blah blah blah blah blah blah blah blah blah blah blah</p>
             </div>
-            <div class="shelf4">
-                <div class="textCon">
-                    <p class="en">About Us</p>
-                    <p class="amh">ስለ እኛ</p>
-                </div>
+            <div class="column">
+                <img
+                    src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                <p class="top en">blah blah blah</p>
+                <p class="top amh">blah blah blah</p>
+                <p class="bottom en">blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                <p class="bottom amh">blah blah blah blah blah blah blah blah blah blah blah blah</p>
             </div>
-            <div class="shelf5">
-                <div class="textCon">   
-                    <p class="en">UNICEF works in the world’s toughest places to reach the most disadvantaged children and adolescents – and to protect the rights of every child, everywhere. Across more than 190 countries and territories, we do whatever it takes to help children survive, thrive and fulfill their potential, from early childhood through adolescence. 
-                        <br />
-                        <br /> 
-                        The world’s largest provider of vaccines, we support child health and nutrition, safe water and sanitation, quality education and skill building, HIV prevention and treatment for mothers and babies, and the protection of children and adolescents from violence and exploitation.
-                        <br />
-                        <br />
-                        Before, during and after humanitarian emergencies, UNICEF is on the ground, bringing lifesaving help and hope to children and families. Non-political and impartial, we are never neutral when it comes to defending children’s rights and safeguarding their lives and futures. 
-                        <br />
-                        <br />
-                        And we never give up. </p>
-                    <p class="amh">UNICEF works in the world’s toughest places to reach the most disadvantaged children and adolescents – and to protect the rights of every child, everywhere. Across more than 190 countries and territories, we do whatever it takes to help children survive, thrive and fulfill their potential, from early childhood through adolescence. 
-                        <br />
-                        <br /> 
-                        The world’s largest provider of vaccines, we support child health and nutrition, safe water and sanitation, quality education and skill building, HIV prevention and treatment for mothers and babies, and the protection of children and adolescents from violence and exploitation.
-                        <br />
-                        <br />
-                        Before, during and after humanitarian emergencies, UNICEF is on the ground, bringing lifesaving help and hope to children and families. Non-political and impartial, we are never neutral when it comes to defending children’s rights and safeguarding their lives and futures. 
-                        <br />
-                        <br />
-                        And we never give up. </p>
-                </div>
-            </div>
-            <div class="shelf6">
-                <div class="level1">
-                    <p class="top en">How we work</p>
-                    <p class="top amh">የኣሰራራችን መንገድ</p>
-                    <p class="bottom en">UNICEF works with the United Nations and its agencies to make sure that children are on the global agenda. UNICEF strikes a balance between thorough research and practical solutions for children.</p>
-                    <p class="bottom amh">UNICEF works with the United Nations and its agencies to make sure that children are on the global agenda. UNICEF strikes a balance between thorough research and practical solutions for children.</p>
-                </div>
-                <div class="level2">
-                    <div class="column">
-                        <img src="https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                        <p class="top en">blah blah blah</p>
-                        <p class="top amh">blah blah blah</p>
-                        <p class="bottom en">blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                        <p class="bottom amh">blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                    </div>
-                    <div class="column">
-                        <img src="https://images.pexels.com/photos/157827/pexels-photo-157827.jpeg" />
-                        <p class="top en">blah blah blah</p>
-                        <p class="top amh">blah blah blah</p>
-                        <p class="bottom en">blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                        <p class="bottom amh">blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                    </div>
-                    <div class="column">
-                        <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                        <p class="top en">blah blah blah</p>
-                        <p class="top amh">blah blah blah</p>
-                        <p class="bottom en">blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                        <p class="bottom amh">blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                    </div>
-                </div>
-            </div>
-            <div class="shelf7">
-                <p class="top en">Frequently asked questions</p>
-                <p class="top amh">ተደጋግሞ የሚነሱ ጥያቄዎች</p>
-                <p class="center en">Get answers for commonly asked questions about <br /> the Brighter Ethiopia organization</p>
-                <p class="center amh">ስለ ብራይተር ኢትዮጵያ ድርጅት ብዙ ጊዜ ለሚነሱ ጥያቄዎች መልስ ያግኙ</p>
-                <button class="btn bottom en">
-                    CLICK FOR FAQ's
-                </button>
-                <button class="btn bottom amh">
-                    ለተደጋጋሚ ጥያቄዎች ጠቅ ያድርጉ
-                </button>
-            </div>
-            <div class="shelf8">
-                <div class="emailUpdatesLink">
-                    <p class="en">Sign up for email updates &nbsp;<i class="fa-solid fa-chevron-right"></i></p>
-                    <p class="amh">ለኢሜል መረጃዎች ይመዝገቡ &nbsp;<i class="fa-solid fa-chevron-right"></i></p>
-                </div>
-                <p class="slogan en">lets brighten ethiopia</p>
-                <p class="slogan amh">ኢትዮጵያን እናድምቅ</p>
-                <div class="socialLinks">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
-            </div>
-            <%}%>
-
+        </div>
+    </div>
+    <div class="shelf7">
+        <p class="top en">Frequently asked questions</p>
+        <p class="top amh">ተደጋግሞ የሚነሱ ጥያቄዎች</p>
+        <p class="center en">Get answers for commonly asked questions about the Brighter Ethiopia organization.</p>
+        <p class="center amh">ስለ ብራይተር ኢትዮጵያ ድርጅት ብዙ ጊዜ ለሚነሱ ጥያቄዎች መልስ ያግኙ</p>
+        <button class="btn bottom en">
+            CLICK FOR FAQ's
+        </button>
+        <button class="btn bottom amh">
+            ለተደጋጋሚ ጥያቄዎች ጠቅ ያድርጉ
+        </button>
+    </div>
+    <div class="shelf8">
+        <div class="contactUs">
+            <p class="en">Contact Us</p>
+            <p class="amh">አግኙን</p>
+        </div>
+        <p class="slogan en">lets brighten ethiopia</p>
+        <p class="slogan amh">ኢትዮጵያን እናድምቅ</p>
+        <div class="socialLinks">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
 </body>
 
 </html>

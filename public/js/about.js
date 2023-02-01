@@ -49,3 +49,16 @@ $('.aboutUsBtn').on('click', function() {
 $('.donateBtn').on('click', function() {
     window.location.href = '/donate'
 })
+
+$('.shelf2 .donateBtnXsCon button').on('click', function() {
+    window.location.href = '/donate'
+})
+
+setInterval(() => {
+    const dropdownVisiblity = $('.shelf2 .dropdown button').attr('class').split(" ").pop().replace(/ /g, '')
+    if (dropdownVisiblity == 'show') {
+        $('.shelf2').css('margin-bottom', '23vh')
+    } else {
+        $('.shelf2').css('margin-bottom', '0vh')
+    }
+})

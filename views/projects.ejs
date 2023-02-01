@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brighter Ethiopia</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -29,139 +31,221 @@
 
 <body>
 
-
-    <%if (status=='loggedIn' ) {%>
-        <script>
-            location.href = '/projects'
-        </script>
-        <%}else{%>
-            <div class="shelf1">
-                <div class="languagesCon">
-                    <div class="lan-en current">
-                        English
-                    </div>
-                    <div class="lan-amh idle">
-                        አማርኛ
-                    </div>
-                </div>
+    <div class="shelf1">
+        <div class="languagesCon">
+            <div class="lan-en current">
+                English
             </div>
-            <div class="shelf2">
+            <div class="lan-amh idle">
+                አማርኛ
+            </div>
+        </div>
+    </div>
+    <div class="shelf2">
+        <img class="mainLogo"
+            src="/img/logos/brighter-ethiopia-high-resolution-logo-color-on-transparent-background.png" />
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link homeBtn en">Home</a>
+                <a class="nav-link homeBtn amh">ቤት</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link current projectsBtn en">Projects</a>
+                <a class="nav-link current projectsBtn amh">ፕሮጀክቶች</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link aboutUsBtn en">About Us</a>
+                <a class="nav-link aboutUsBtn amh">ስለ እኛ</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn donateBtn en">
+                    Donate
+                </button>
+                <button class="btn donateBtn amh">
+                    አሁን ይለግሱ
+                </button>
+            </li>
+        </ul>
+        <div class="donateBtnXsCon">
+            <button class="btn donateBtn en">
+                Donate
+            </button>
+            <button class="btn donateBtn amh">
+                አሁን ይለግሱ
+            </button>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li class="en"><a class="dropdown-item homeBtn">Home</a></li>
+                <li class="amh"><a class="dropdown-item homeBtn">ቤት</a></li>
+                <li class="en"><a class="dropdown-item projectsBtn">Projects</a></li>
+                <li class="amh"><a class="dropdown-item projectsBtn">ፕሮጀክቶች</a></li>
+                <li class="en"><a class="dropdown-item aboutUsBtn">About Us</a></li>
+                <li class="amh"><a class="dropdown-item aboutUsBtn">ስለ እኛ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="shelf3">
+        <p>Projects</p>
+        <img
+            src="https://img.freepik.com/free-photo/beautiful-shot-green-fields-with-narrow-roads-middle_181624-11247.jpg?w=1380&t=st=1674490798~exp=1674491398~hmac=ec866cc06b5e5c1d9e4e0654fd1c2b88821c2b016b0a134556c9be0c8cbe7472" />
+    </div>
+    <div class="shelf4">
+        <div class="level1">
+            <p class="qoute en">❝Sustainable development is the pathway to the future we want for all. It offers a
+                framework to generate economic growth, achieve social justice, exercise environmental stewardship and
+                strengthen governance.❞ &nbsp;<span>- Ban Ki-moon</span></p>
+            <p class="qoute amh">❝ቀጣይነት ያለው ልማት ለሁሉም የምንፈልገው የወደፊት መንገድ ነው። የኢኮኖሚ ዕድገትን ለማምጣት፣ ማህበራዊ ፍትህን ለማስፈን፣ የአካባቢ
+                ጥበቃን ለመጠቀም እና አስተዳደርን ለማጠናከር ማዕቀፍ ያቀርባል።❞ <span>- ባን ኪ-ሙን</span></p>
+        </div>
+        <div class="level2">
+            <div class="left">
+                <img src="https://www.researchdive.com/blogImages/Qz1xnVXkPH.jpeg" />
+            </div>
+            <div class="right">
+                <p class="top en">Agriculture</p>
+                <p class="top amh">ግብርና</p>
+                <p class="center en">The WaterCredit Initiative ® is our core solution. We work with our in-country
+                    financial partners to add loans for water and sanitation solutions to their portfolios. These
+                    partners then mobilize funding from capital markets to provide affordable loans to people in need of
+                    water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid
+                    loan creates the opportunity for another family to get the safe water and toilets they need, fast
+                    and affordably. It is a pay-it-forward system that makes it possible to help more people in ways
+                    that will last.</p>
+                <p class="center amh">The WaterCredit Initiative ® is our core solution. We work with our in-country
+                    financial partners to add loans for water and sanitation solutions to their portfolios. These
+                    partners then mobilize funding from capital markets to provide affordable loans to people in need of
+                    water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid
+                    loan creates the opportunity for another family to get the safe water and toilets they need, fast
+                    and affordably. It is a pay-it-forward system that makes it possible to help more people in ways
+                    that will last.</p>
+                <p class="bottom en">Learn more</p>
+                <p class="bottom amh">ተጨማሪ ይወቁ</p>
+            </div>
+        </div>
+        <div class="level3">
+            <div class="left">
+                <p class="top en">Education</p>
+                <p class="top amh">ትምህርት</p>
+                <p class="center en">The WaterCredit Initiative ® is our core solution. We work with our in-country
+                    financial partners to add loans for water and sanitation solutions to their portfolios. These
+                    partners then mobilize funding from capital markets to provide affordable loans to people in need of
+                    water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid
+                    loan creates the opportunity for another family to get the safe water and toilets they need, fast
+                    and affordably. It is a pay-it-forward system that makes it possible to help more people in ways
+                    that will last.</p>
+                <p class="center amh">The WaterCredit Initiative ® is our core solution. We work with our in-country
+                    financial partners to add loans for water and sanitation solutions to their portfolios. These
+                    partners then mobilize funding from capital markets to provide affordable loans to people in need of
+                    water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid
+                    loan creates the opportunity for another family to get the safe water and toilets they need, fast
+                    and affordably. It is a pay-it-forward system that makes it possible to help more people in ways
+                    that will last.</p>
+                <p class="bottom en">Learn more</p>
+                <p class="bottom amh">ተጨማሪ ይወቁ</p>
+            </div>
+            <div class="right">
                 <img
-                    src="/img/logos/brighter-ethiopia-high-resolution-logo-color-on-transparent-background.png" />
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link homeBtn en">Home</a>
-                        <a class="nav-link homeBtn amh">ቤት</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link current projectsBtn en">Projects</a>
-                        <a class="nav-link current projectsBtn amh">ፕሮጀክቶች</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link aboutUsBtn en">About Us</a>
-                        <a class="nav-link aboutUsBtn amh">ስለ እኛ</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn donateBtn en">
-                            Donate
-                        </button>
-                        <button class="btn donateBtn amh">
-                            አሁን ይለግሱ
-                        </button>
-                    </li>
-                </ul>
+                    src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
             </div>
-            <div class="shelf3">
-                <p>Projects</p>
-                <img src="https://img.freepik.com/free-photo/beautiful-shot-green-fields-with-narrow-roads-middle_181624-11247.jpg?w=1380&t=st=1674490798~exp=1674491398~hmac=ec866cc06b5e5c1d9e4e0654fd1c2b88821c2b016b0a134556c9be0c8cbe7472" />
+        </div>
+        <div class="level4">
+            <div class="left">
+                <img
+                    src="https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
             </div>
-            <div class="shelf4">
-                <div class="level1">
-                    <p class="qoute en">❝Sustainable development is the pathway to the future we want for all. It offers a framework to generate economic growth, achieve social justice, exercise environmental stewardship and strengthen governance.❞ &nbsp;<span>- Ban Ki-moon</span></p>
-                    <p class="qoute amh">❝ቀጣይነት ያለው ልማት ለሁሉም የምንፈልገው የወደፊት መንገድ ነው። የኢኮኖሚ ዕድገትን ለማምጣት፣ ማህበራዊ ፍትህን ለማስፈን፣ የአካባቢ ጥበቃን ለመጠቀም እና አስተዳደርን ለማጠናከር ማዕቀፍ ያቀርባል።❞ <span>- ባን ኪ-ሙን</span></p>
-                </div>
-                <div class="level2">
-                    <div class="left">
-                        <img src="https://www.researchdive.com/blogImages/Qz1xnVXkPH.jpeg" />
-                    </div>
-                    <div class="right">
-                        <p class="top en">Agriculture</p>
-                        <p class="top amh">ግብርና</p>
-                        <p class="center en">The WaterCredit Initiative ® is our core solution. We work with our in-country financial partners to add loans for water and sanitation solutions to their portfolios. These partners then mobilize funding from capital markets to provide affordable loans to people in need of water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid loan creates the opportunity for another family to get the safe water and toilets they need, fast and affordably. It is a pay-it-forward system that makes it possible to help more people in ways that will last.</p>
-                        <p class="center amh">The WaterCredit Initiative ® is our core solution. We work with our in-country financial partners to add loans for water and sanitation solutions to their portfolios. These partners then mobilize funding from capital markets to provide affordable loans to people in need of water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid loan creates the opportunity for another family to get the safe water and toilets they need, fast and affordably. It is a pay-it-forward system that makes it possible to help more people in ways that will last.</p>
-                        <p class="bottom en">Learn more</p>
-                        <p class="bottom amh">ተጨማሪ ይወቁ</p>
-                    </div>
-                </div>
-                <div class="level3">
-                    <div class="left">
-                        <p class="top en">Education</p>
-                        <p class="top amh">ትምህርት</p>
-                        <p class="center en">The WaterCredit Initiative ® is our core solution. We work with our in-country financial partners to add loans for water and sanitation solutions to their portfolios. These partners then mobilize funding from capital markets to provide affordable loans to people in need of water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid loan creates the opportunity for another family to get the safe water and toilets they need, fast and affordably. It is a pay-it-forward system that makes it possible to help more people in ways that will last.</p>
-                        <p class="center amh">The WaterCredit Initiative ® is our core solution. We work with our in-country financial partners to add loans for water and sanitation solutions to their portfolios. These partners then mobilize funding from capital markets to provide affordable loans to people in need of water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid loan creates the opportunity for another family to get the safe water and toilets they need, fast and affordably. It is a pay-it-forward system that makes it possible to help more people in ways that will last.</p>
-                        <p class="bottom en">Learn more</p>
-                        <p class="bottom amh">ተጨማሪ ይወቁ</p>
-                    </div>
-                    <div class="right">
-                        <img src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                    </div>
-                </div>
-                <div class="level4">
-                    <div class="left">
-                        <img src="https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                    </div>
-                    <div class="right">
-                        <p class="top en">Energy</p>
-                        <p class="top amh">ኤሌክትሪክ ኃይል</p>
-                        <p class="center en">The WaterCredit Initiative ® is our core solution. We work with our in-country financial partners to add loans for water and sanitation solutions to their portfolios. These partners then mobilize funding from capital markets to provide affordable loans to people in need of water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid loan creates the opportunity for another family to get the safe water and toilets they need, fast and affordably. It is a pay-it-forward system that makes it possible to help more people in ways that will last.</p>
-                        <p class="center amh">The WaterCredit Initiative ® is our core solution. We work with our in-country financial partners to add loans for water and sanitation solutions to their portfolios. These partners then mobilize funding from capital markets to provide affordable loans to people in need of water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid loan creates the opportunity for another family to get the safe water and toilets they need, fast and affordably. It is a pay-it-forward system that makes it possible to help more people in ways that will last.</p>
-                        <p class="bottom en">Learn more</p>
-                        <p class="bottom amh">ተጨማሪ ይወቁ</p>
-                    </div>
-                </div>
-                <div class="level5">
-                    <div class="left">
-                        <p class="top en">Innovation</p>
-                        <p class="top amh">ፈጠራ</p>
-                        <p class="center en">The WaterCredit Initiative ® is our core solution. We work with our in-country financial partners to add loans for water and sanitation solutions to their portfolios. These partners then mobilize funding from capital markets to provide affordable loans to people in need of water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid loan creates the opportunity for another family to get the safe water and toilets they need, fast and affordably. It is a pay-it-forward system that makes it possible to help more people in ways that will last.</p>
-                        <p class="center amh">The WaterCredit Initiative ® is our core solution. We work with our in-country financial partners to add loans for water and sanitation solutions to their portfolios. These partners then mobilize funding from capital markets to provide affordable loans to people in need of water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid loan creates the opportunity for another family to get the safe water and toilets they need, fast and affordably. It is a pay-it-forward system that makes it possible to help more people in ways that will last.</p>
-                        <p class="bottom en">Learn more</p>
-                        <p class="bottom amh">ተጨማሪ ይወቁ</p>
-                    </div>
-                    <div class="right">
-                        <img src="https://images.pexels.com/photos/5726808/pexels-photo-5726808.jpeg?auto=compress&cs=tinysrgb&w=1600" />
-                    </div>
-                </div>
-                <div class="level6">
-                    <div class="left">
-                        <img src="https://thumbs.dreamstime.com/b/close-up-shot-bore-well-drilling-truck-tubewell-machine-217768005.jpg" />
-                    </div>
-                    <div class="right">
-                        <p class="top en">Water</p>
-                        <p class="top amh">ውሃ</p>
-                        <p class="center en">The WaterCredit Initiative ® is our core solution. We work with our in-country financial partners to add loans for water and sanitation solutions to their portfolios. These partners then mobilize funding from capital markets to provide affordable loans to people in need of water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid loan creates the opportunity for another family to get the safe water and toilets they need, fast and affordably. It is a pay-it-forward system that makes it possible to help more people in ways that will last.</p>
-                        <p class="center amh">The WaterCredit Initiative ® is our core solution. We work with our in-country financial partners to add loans for water and sanitation solutions to their portfolios. These partners then mobilize funding from capital markets to provide affordable loans to people in need of water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid loan creates the opportunity for another family to get the safe water and toilets they need, fast and affordably. It is a pay-it-forward system that makes it possible to help more people in ways that will last.</p>
-                        <p class="bottom en">Learn more</p>
-                        <p class="bottom amh">ተጨማሪ ይወቁ</p>
-                    </div>
-                </div>
+            <div class="right">
+                <p class="top en">Energy</p>
+                <p class="top amh">ኤሌክትሪክ ኃይል</p>
+                <p class="center en">The WaterCredit Initiative ® is our core solution. We work with our in-country
+                    financial partners to add loans for water and sanitation solutions to their portfolios. These
+                    partners then mobilize funding from capital markets to provide affordable loans to people in need of
+                    water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid
+                    loan creates the opportunity for another family to get the safe water and toilets they need, fast
+                    and affordably. It is a pay-it-forward system that makes it possible to help more people in ways
+                    that will last.</p>
+                <p class="center amh">The WaterCredit Initiative ® is our core solution. We work with our in-country
+                    financial partners to add loans for water and sanitation solutions to their portfolios. These
+                    partners then mobilize funding from capital markets to provide affordable loans to people in need of
+                    water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid
+                    loan creates the opportunity for another family to get the safe water and toilets they need, fast
+                    and affordably. It is a pay-it-forward system that makes it possible to help more people in ways
+                    that will last.</p>
+                <p class="bottom en">Learn more</p>
+                <p class="bottom amh">ተጨማሪ ይወቁ</p>
             </div>
-            <div class="shelf6">
-                <div class="emailUpdatesLink">
-                    <p class="en">Sign up for email updates &nbsp;<i class="fa-solid fa-chevron-right"></i></p>
-                    <p class="amh">ለኢሜል መረጃዎች ይመዝገቡ &nbsp;<i class="fa-solid fa-chevron-right"></i></p>
-                </div>
-                <p class="slogan en">lets brighten ethiopia</p>
-                <p class="slogan amh">ኢትዮጵያን እናድምቅ</p>
-                <div class="socialLinks">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
+        </div>
+        <div class="level5">
+            <div class="left">
+                <p class="top en">Innovation</p>
+                <p class="top amh">ፈጠራ</p>
+                <p class="center en">The WaterCredit Initiative ® is our core solution. We work with our in-country
+                    financial partners to add loans for water and sanitation solutions to their portfolios. These
+                    partners then mobilize funding from capital markets to provide affordable loans to people in need of
+                    water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid
+                    loan creates the opportunity for another family to get the safe water and toilets they need, fast
+                    and affordably. It is a pay-it-forward system that makes it possible to help more people in ways
+                    that will last.</p>
+                <p class="center amh">The WaterCredit Initiative ® is our core solution. We work with our in-country
+                    financial partners to add loans for water and sanitation solutions to their portfolios. These
+                    partners then mobilize funding from capital markets to provide affordable loans to people in need of
+                    water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid
+                    loan creates the opportunity for another family to get the safe water and toilets they need, fast
+                    and affordably. It is a pay-it-forward system that makes it possible to help more people in ways
+                    that will last.</p>
+                <p class="bottom en">Learn more</p>
+                <p class="bottom amh">ተጨማሪ ይወቁ</p>
             </div>
-            <%}%>
-
+            <div class="right">
+                <img
+                    src="https://images.pexels.com/photos/5726808/pexels-photo-5726808.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+            </div>
+        </div>
+        <div class="level6">
+            <div class="left">
+                <img
+                    src="https://thumbs.dreamstime.com/b/close-up-shot-bore-well-drilling-truck-tubewell-machine-217768005.jpg" />
+            </div>
+            <div class="right">
+                <p class="top en">Water</p>
+                <p class="top amh">ውሃ</p>
+                <p class="center en">The WaterCredit Initiative ® is our core solution. We work with our in-country
+                    financial partners to add loans for water and sanitation solutions to their portfolios. These
+                    partners then mobilize funding from capital markets to provide affordable loans to people in need of
+                    water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid
+                    loan creates the opportunity for another family to get the safe water and toilets they need, fast
+                    and affordably. It is a pay-it-forward system that makes it possible to help more people in ways
+                    that will last.</p>
+                <p class="center amh">The WaterCredit Initiative ® is our core solution. We work with our in-country
+                    financial partners to add loans for water and sanitation solutions to their portfolios. These
+                    partners then mobilize funding from capital markets to provide affordable loans to people in need of
+                    water. People living in poverty use these loans to put a tap or toilet in their homes. Every repaid
+                    loan creates the opportunity for another family to get the safe water and toilets they need, fast
+                    and affordably. It is a pay-it-forward system that makes it possible to help more people in ways
+                    that will last.</p>
+                <p class="bottom en">Learn more</p>
+                <p class="bottom amh">ተጨማሪ ይወቁ</p>
+            </div>
+        </div>
+    </div>
+    <div class="shelf5">
+        <div class="contactUs">
+            <p class="en">Contact Us</p>
+            <p class="amh">አግኙን</p>
+        </div>
+        <p class="slogan en">lets brighten ethiopia</p>
+        <p class="slogan amh">ኢትዮጵያን እናድምቅ</p>
+        <div class="socialLinks">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
 </body>
 
 </html>
