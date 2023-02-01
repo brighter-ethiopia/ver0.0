@@ -1,0 +1,1780 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.amh {
+    display: none;
+}
+
+.shelf1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+    background-color: #0088ccc7;
+}
+
+.shelf1 .languagesCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+.shelf1 .languagesCon div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    font-size: 3.5vw;
+    font-weight: 600;
+    color: #ffffff;
+    margin-right: 5%;
+    cursor: pointer;
+    border-top: 4px solid transparent;
+}
+
+.shelf1 .languagesCon .current {
+    border-top: 4px solid #4d4d4d;
+}
+
+.shelf1 .languagesCon .idle:hover {
+    border-top: 4px solid #4d4d4d;
+}
+
+.shelf2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    margin-top: 0.5%;
+}
+
+.shelf2 .mainLogo {
+    width: 150px;
+    height: 90px;
+}
+
+.shelf2 .donateBtnXsCon {
+    border-radius: 7px;
+    background-color: #343333;
+}
+
+.shelf2 .donateBtnXsCon button {
+    font-size: 4vw;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #0088CC;
+}
+
+.shelf2 ul {
+    display: none;
+}
+
+.shelf2 .dropdown button {
+    display: flex;
+}
+
+.shelf2 .dropdown button i {
+    font-size: 6vw;
+    margin: auto;
+}
+
+.shelf2 .dropdown .dropdown-menu {
+    width: 100vw;
+    height: 23vh;
+    margin-top: 40px !important;
+    border-top: 1.5px solid #343333;
+    border-bottom: 1.5px solid #343333;
+    border-radius: 0%;
+    background-color: #ffffff;
+}
+
+.shelf2 .dropdown .dropdown-menu li {
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+    border-bottom: 1px solid #777777;
+}
+
+.shelf2 .dropdown .dropdown-menu li:nth-last-child(1) {
+    border: none;
+}
+
+.shelf2 .dropdown .dropdown-menu li:nth-last-child(2) {
+    border: none;
+}
+
+.shelf2 .dropdown .dropdown-menu li a {
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+.shelf3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 35vh;
+    margin-top: 0.5%;
+}
+
+.shelf3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.shelf4 {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    margin-top: -7%;
+}
+
+.shelf4 .textCon {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.shelf4 .textCon p {
+    font-size: 4vw;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+.shelf5 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10%;
+}
+
+.shelf5 .textCon {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.shelf5 .textCon p {
+    text-align: justify;
+    font-size: 4vw;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.infoConXs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+
+.infoConXs .top {
+    font-size: 6vw;
+    font-weight: 700;
+}
+
+.infoConXs .bottom {
+    text-align: justify;
+    font-size: 4vw;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.shelf6 {
+    display: none;
+}
+
+.shelf7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30vh;
+    margin-left: 5%;
+}
+
+.shelf7 .top {
+    font-size: 6vw;
+    font-weight: 700;
+}
+
+.shelf7 .center {
+    text-align: justify;
+    font-size: 4vw;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.shelf7 .bottom {
+    font-size: 4vw;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 1%;
+    background-color: #0088CC;
+}
+
+.shelf7 .bottom:hover {
+    color: #000000;
+}
+
+.shelf8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    margin-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #d6d6d6;
+}
+
+.shelf8 .emailUpdatesLink {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.shelf8 .emailUpdatesLink p {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 700;
+    color: #000000;
+    margin: auto;
+}
+
+.shelf8 .emailUpdatesLink p i {
+    font-size: 0.85vw;
+}
+
+.shelf8 .slogan {
+    text-align: center;
+    font-size: 9vw;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    color: #000000;
+    margin: auto;
+    cursor: default;
+}
+
+.shelf8 .socialLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.shelf8 .socialLinks i {
+    font-size: 8vw;
+    cursor: pointer;
+}
+
+@media (min-width: 576px) { 
+    .shelf1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+        background-color: #0088ccc7;
+    }
+    
+    .shelf1 .languagesCon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 100%;
+    }
+    
+    .shelf1 .languagesCon div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+        font-size: 2.5vw;
+        font-weight: 600;
+        color: #ffffff;
+        margin-right: 5%;
+        cursor: pointer;
+        border-top: 4px solid transparent;
+    }
+    
+    .shelf1 .languagesCon .current {
+        border-top: 4px solid #4d4d4d;
+    }
+    
+    .shelf1 .languagesCon .idle:hover {
+        border-top: 4px solid #4d4d4d;
+    }
+    
+    .shelf2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 25vh;
+        margin-top: 0.5%;
+    }
+    
+    .shelf2 .mainLogo {
+        width: 150px;
+        height: 90px;
+    }
+    
+    .shelf2 .donateBtnXsCon {
+        border-radius: 7px;
+        background-color: #343333;
+    }
+    
+    .shelf2 .donateBtnXsCon button {
+        font-size: 2.5vw;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        background-color: #0088CC;
+    }
+    
+    .shelf2 ul {
+        display: none;
+    }
+    
+    .shelf2 .dropdown button {
+        display: flex;
+    }
+    
+    .shelf2 .dropdown button i {
+        font-size: 3vw;
+        margin: auto;
+    }
+    
+    .shelf2 .dropdown .dropdown-menu {
+        width: 100vw;
+        height: fit-content;
+        margin-top: 40px !important;
+        border-top: 1.5px solid #343333;
+        border-bottom: 1.5px solid #343333;
+        border-radius: 0%;
+        background-color: #ffffff;
+    }
+    
+    .shelf2 .dropdown .dropdown-menu li {
+        width: 90%;
+        margin: auto;
+        padding: 1%;
+        border-bottom: 1px solid #777777;
+    }
+    
+    .shelf2 .dropdown .dropdown-menu li:nth-last-child(1) {
+        border: none;
+    }
+    
+    .shelf2 .dropdown .dropdown-menu li:nth-last-child(2) {
+        border: none;
+    }
+    
+    .shelf2 .dropdown .dropdown-menu li a {
+        font-size: 2vw;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+    }
+
+    .shelf3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        left: 12.5%;
+        width: 75%;
+        height: 55vh;
+        margin-top: 0.5%;
+        z-index: -1;
+    }
+    
+    .shelf3 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .shelf4 {
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        margin-top: -3%;
+    }
+    
+    .shelf4 .textCon {
+        display: flex;
+        width: 30%;
+        height: 100%;
+        margin: auto;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    .shelf4 .textCon p {
+        font-size: 3vw;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        margin: auto;
+    }
+    
+    .shelf5 {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        margin-top: 5%;
+    }
+    
+    .shelf5 .textCon {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .shelf5 .textCon p {
+        text-align: justify;
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .infoConXs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 30%;
+        margin-top: 0%;
+        margin-left: 5%;
+    }
+    
+    .infoConXs .top {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    
+    .infoConXs .bottom {
+        text-align: justify;
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .shelf6 {
+        display: none;
+    }
+    
+    .shelf7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 50vh;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    
+    .shelf7 .top {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    
+    .shelf7 .center {
+        text-align: justify;
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .shelf7 .bottom {
+        font-size: 2.5vw;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: #0088CC;
+    }
+    
+    .shelf7 .bottom:hover {
+        color: #000000;
+    }
+    
+    .shelf8 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 35vh;
+        margin-top: 3%;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: #d6d6d6;
+    }
+    
+    .shelf8 .contactUs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        cursor: pointer;
+    }
+    
+    .shelf8 .contactUs p {
+        text-align: center;
+        font-size: 2.5vw;
+        font-weight: 700;
+        color: #000000;
+        margin: auto;
+    }
+    
+    .shelf8 .slogan {
+        text-align: center;
+        font-size: 3.5vw;
+        font-weight: 500;
+        font-family: 'Dancing Script', cursive;
+        color: #000000;
+        margin: auto;
+        cursor: default;
+    }
+    
+    .shelf8 .socialLinks {
+        display: flex;
+        column-gap: 3%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+    }
+    
+    .shelf8 .socialLinks i {
+        font-size: 2.5vw;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .shelf1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 4vh;
+        background-color: #0088ccc7;
+    }
+    
+    .shelf1 .languagesCon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 100%;
+    }
+    
+    .shelf1 .languagesCon div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+        font-size: 2.8vw;
+        font-weight: 600;
+        color: #ffffff;
+        margin-right: 5%;
+        cursor: pointer;
+        border-top: 4px solid transparent;
+    }
+    
+    .shelf1 .languagesCon .current {
+        border-top: 4px solid #4d4d4d;
+    }
+    
+    .shelf1 .languagesCon .idle:hover {
+        border-top: 4px solid #4d4d4d;
+    }
+    
+    .shelf2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        left: 5%;
+        width: 90%;
+        height: 15vh;
+        margin-top: 0.5%;
+    }
+    
+    .shelf2 .mainLogo {
+        width: 210px;
+        height: 120px;
+    }
+
+    .shelf2 .donateBtnXsCon {
+        display: none;
+    }
+
+    .shelf2 .dropdown {
+        display: none;
+    }
+
+    .shelf2 ul {
+        display: flex;
+        width: 100%;
+    }
+    
+    .shelf2 ul li {
+        margin-left: 3%;
+    }
+    
+    .shelf2 ul .current {
+        border-bottom: 4px solid #4d4d4d;
+    }
+    
+    .shelf2 ul li a {
+        font-size: 2.3vw;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        cursor: pointer;
+    }
+    
+    .shelf2 ul li a:hover {
+        color: #0088CC;
+    }
+    
+    .shelf2 ul li button {
+        font-size: 2.3vw;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        background-color: #0088CC;
+    }
+
+    .shelf3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        left: 0%;
+        width: 100%;
+        height: 35vh;
+        margin-top: 0.5%;
+    }
+    
+    .shelf3 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .shelf4 {
+        display: flex;
+        width: 100%;
+        height: 7vh;
+        margin-top: -7%;
+    }
+    
+    .shelf4 .textCon {
+        display: flex;
+        width: 30%;
+        height: 100%;
+        margin: auto;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    .shelf4 .textCon p {
+        font-size: 4vw;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        margin: auto;
+    }
+    
+    .shelf5 {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        margin-top: 10%;
+    }
+    
+    .shelf5 .textCon {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .shelf5 .textCon p {
+        text-align: justify;
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .infoConXs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 30%;
+        margin-top: 6%;
+        margin-left: 5%;
+    }
+    
+    .infoConXs .top {
+        font-size: 5vw;
+        font-weight: 700;
+    }
+    
+    .infoConXs .bottom {
+        text-align: justify;
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .shelf6 {
+        display: none;
+    }
+    
+    .shelf7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 30vh;
+        margin-top: 0%;
+        margin-left: 5%;
+    }
+    
+    .shelf7 .top {
+        font-size: 5vw;
+        font-weight: 700;
+    }
+    
+    .shelf7 .center {
+        text-align: justify;
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 1%;
+    }
+    
+    .shelf7 .bottom {
+        font-size: 3vw;
+        font-weight: 500;
+        color: #ffffff;
+        margin-top: 1%;
+        background-color: #0088CC;
+    }
+    
+    .shelf7 .bottom:hover {
+        color: #000000;
+    }
+    
+    .shelf8 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 25vh;
+        margin-top: 3%;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: #d6d6d6;
+    }
+    
+    .shelf8 .contactUs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        cursor: pointer;
+    }
+    
+    .shelf8 .contactUs p {
+        text-align: center;
+        font-size: 4vw;
+        font-weight: 700;
+        color: #000000;
+        margin: auto;
+    }
+    
+    .shelf8 .slogan {
+        text-align: center;
+        font-size: 7vw;
+        font-weight: 500;
+        font-family: 'Dancing Script', cursive;
+        color: #000000;
+        margin: auto;
+        cursor: default;
+    }
+    
+    .shelf8 .socialLinks {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+    }
+    
+    .shelf8 .socialLinks i {
+        font-size: 5vw;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) and (max-height: 500px) {
+    .shelf1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+        background-color: #0088ccc7;
+    }
+    
+    .shelf1 .languagesCon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 100%;
+    }
+    
+    .shelf1 .languagesCon div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+        font-size: 2.5vw;
+        font-weight: 600;
+        color: #ffffff;
+        margin-right: 5%;
+        cursor: pointer;
+        border-top: 4px solid transparent;
+    }
+    
+    .shelf1 .languagesCon .current {
+        border-top: 4px solid #4d4d4d;
+    }
+    
+    .shelf1 .languagesCon .idle:hover {
+        border-top: 4px solid #4d4d4d;
+    }
+    
+    .shelf2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 25vh;
+        margin-top: 0.5%;
+    }
+    
+    .shelf2 .mainLogo {
+        width: 150px;
+        height: 90px;
+    }
+    
+    .shelf2 .donateBtnXsCon {
+        display: flex;
+        border-radius: 7px;
+        background-color: #343333;
+    }
+    
+    .shelf2 .donateBtnXsCon button {
+        font-size: 2vw;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        background-color: #0088CC;
+    }
+    
+    .shelf2 ul {
+        display: none;
+    }
+
+    .shelf2 .dropdown {
+        display: flex;
+    }
+    
+    .shelf2 .dropdown button {
+        display: flex;
+    }
+    
+    .shelf2 .dropdown button i {
+        font-size: 2.5vw;
+        margin: auto;
+    }
+    
+    .shelf2 .dropdown .dropdown-menu {
+        width: 100vw;
+        height: fit-content;
+        margin-top: 40px !important;
+        border-top: 1.5px solid #343333;
+        border-bottom: 1.5px solid #343333;
+        border-radius: 0%;
+        background-color: #ffffff;
+    }
+    
+    .shelf2 .dropdown .dropdown-menu li {
+        width: 90%;
+        margin: auto;
+        padding: 1%;
+        border-bottom: 1px solid #777777;
+    }
+    
+    .shelf2 .dropdown .dropdown-menu li:nth-last-child(1) {
+        border: none;
+    }
+    
+    .shelf2 .dropdown .dropdown-menu li:nth-last-child(2) {
+        border: none;
+    }
+    
+    .shelf2 .dropdown .dropdown-menu li a {
+        font-size: 2vw;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+    }
+
+    .shelf3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        left: 12.5%;
+        width: 75%;
+        height: 55vh;
+        margin-top: 0.5%;
+        z-index: -1;
+    }
+    
+    .shelf3 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .shelf4 {
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        margin-top: -3%;
+    }
+    
+    .shelf4 .textCon {
+        display: flex;
+        width: 30%;
+        height: 100%;
+        margin: auto;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    .shelf4 .textCon p {
+        font-size: 3vw;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        margin: auto;
+    }
+    
+    .shelf5 {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        margin-top: 5%;
+    }
+    
+    .shelf5 .textCon {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .shelf5 .textCon p {
+        text-align: justify;
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .infoConXs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 30%;
+        margin-top: 0%;
+        margin-left: 5%;
+    }
+    
+    .infoConXs .top {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    
+    .infoConXs .bottom {
+        text-align: justify;
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .shelf6 {
+        display: none;
+    }
+    
+    .shelf7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 50vh;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    
+    .shelf7 .top {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    
+    .shelf7 .center {
+        text-align: justify;
+        font-size: 2.5vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .shelf7 .bottom {
+        font-size: 2.5vw;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: #0088CC;
+    }
+    
+    .shelf7 .bottom:hover {
+        color: #000000;
+    }
+    
+    .shelf8 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 35vh;
+        margin-top: 8%;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: #d6d6d6;
+    }
+    
+    .shelf8 .contactUs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        cursor: pointer;
+    }
+    
+    .shelf8 .contactUs p {
+        text-align: center;
+        font-size: 2.5vw;
+        font-weight: 700;
+        color: #000000;
+        margin: auto;
+    }
+    
+    .shelf8 .slogan {
+        text-align: center;
+        font-size: 3.5vw;
+        font-weight: 500;
+        font-family: 'Dancing Script', cursive;
+        color: #000000;
+        margin: auto;
+        cursor: default;
+    }
+    
+    .shelf8 .socialLinks {
+        display: flex;
+        column-gap: 3%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+    }
+    
+    .shelf8 .socialLinks i {
+        font-size: 2.5vw;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 992px) { 
+    .shelf1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 6vh;
+        background-color: #0088ccc7;
+    }
+    
+    .shelf1 .languagesCon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 100%;
+    }
+    
+    .shelf1 .languagesCon div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+        font-size: 1.8vw;
+        font-weight: 600;
+        color: #ffffff;
+        margin-right: 5%;
+        cursor: pointer;
+        border-top: 4px solid transparent;
+    }
+    
+    .shelf1 .languagesCon .current {
+        border-top: 4px solid #4d4d4d;
+    }
+    
+    .shelf1 .languagesCon .idle:hover {
+        border-top: 4px solid #4d4d4d;
+    }
+    
+    .shelf2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        left: 5%;
+        width: 90%;
+        height: 20vh;
+        margin-top: 0.5%;
+    }
+    
+    .shelf2 .mainLogo {
+        width: 210px;
+        height: 120px;
+    }
+
+    .shelf2 .donateBtnXsCon {
+        display: none;
+    }
+
+    .shelf2 .dropdown {
+        display: none;
+    }
+
+    .shelf2 ul {
+        display: flex;
+        width: 100%;
+    }
+    
+    .shelf2 ul li {
+        margin-left: 3%;
+    }
+    
+    .shelf2 ul .current {
+        border-bottom: 4px solid #4d4d4d;
+    }
+    
+    .shelf2 ul li a {
+        font-size: 1.5vw;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        cursor: pointer;
+    }
+    
+    .shelf2 ul li a:hover {
+        color: #0088CC;
+    }
+    
+    .shelf2 ul li button {
+        font-size: 1.8vw;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        background-color: #0088CC;
+    }
+
+    .shelf3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: 40vh;
+        margin-top: 0.5%;
+    }
+    
+    .shelf3 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .shelf4 {
+        display: flex;
+        width: 100%;
+        height: 7vh;
+        margin-top: -3%;
+    }
+    
+    .shelf4 .textCon {
+        display: flex;
+        width: 20%;
+        height: 100%;
+        margin: auto;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    .shelf4 .textCon p {
+        font-size: 2.8vw;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        margin: auto;
+    }
+    
+    .shelf5 {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        margin-top: 5%;
+    }
+    
+    .shelf5 .textCon {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .shelf5 .textCon p {
+        text-align: justify;
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .infoConXs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 30%;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    
+    .infoConXs .top {
+        font-size: 3vw;
+        font-weight: 700;
+    }
+    
+    .infoConXs .bottom {
+        text-align: justify;
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .shelf6 {
+        display: none;
+    }
+    
+    .shelf7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 30vh;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    
+    .shelf7 .top {
+        font-size: 3vw;
+        font-weight: 700;
+    }
+    
+    .shelf7 .center {
+        text-align: justify;
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 1%;
+    }
+    
+    .shelf7 .bottom {
+        font-size: 1.8vw;
+        font-weight: 500;
+        color: #ffffff;
+        margin-top: 1%;
+        background-color: #0088CC;
+    }
+    
+    .shelf7 .bottom:hover {
+        color: #000000;
+    }
+    
+    .shelf8 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 25vh;
+        margin-top: 3%;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: #d6d6d6;
+    }
+    
+    .shelf8 .contactUs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        cursor: pointer;
+    }
+    
+    .shelf8 .contactUs p {
+        text-align: center;
+        font-size: 2.8vw;
+        font-weight: 700;
+        color: #000000;
+        margin: auto;
+    }
+    
+    .shelf8 .slogan {
+        text-align: center;
+        font-size: 4vw;
+        font-weight: 500;
+        font-family: 'Dancing Script', cursive;
+        color: #000000;
+        margin: auto;
+        cursor: default;
+    }
+    
+    .shelf8 .socialLinks {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+        height: 80%;
+    }
+    
+    .shelf8 .socialLinks i {
+        font-size: 3vw;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1200px) {
+    .shelf1 {
+        display: flex;
+        justify-content: right;
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: 3vh;
+        margin-top: 1%;
+        background-color: #0088ccc7;
+    }
+    
+    .shelf1 .languagesCon {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        width: 30%;
+        height: 100%;
+    }
+    
+    .shelf1 .languagesCon div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+        font-size: 0.8vw;
+        font-weight: 600;
+        color: #ffffff;
+        margin-right: 2%;
+        cursor: pointer;
+        border-top: 4px solid transparent;
+    }
+    
+    .shelf1 .languagesCon .current {
+        border-top: 4px solid #4d4d4d;
+    }
+    
+    .shelf1 .languagesCon .idle:hover {
+        border-top: 4px solid #4d4d4d;
+    }
+    
+    .shelf2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: 15vh;
+        margin-top: 0.5%;
+    }
+    
+    .shelf2 .mainLogo {
+        width: 250px;
+        height: 140px;
+    }
+
+    .shelf2 .donateBtnXsCon {
+        display: none;
+    }
+
+    .shelf2 .dropdown {
+        display: none;
+    }
+
+    .shelf2 ul {
+        display: flex;
+        width: 40%;
+    }
+    
+    .shelf2 ul li {
+        margin-left: 3%;
+    }
+    
+    .shelf2 ul .current {
+        border-bottom: 4px solid #4d4d4d;
+    }
+    
+    .shelf2 ul li a {
+        font-size: 1.1vw;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        cursor: pointer;
+    }
+    
+    .shelf2 ul li a:hover {
+        color: #0088CC;
+    }
+    
+    .shelf2 ul li button {
+        font-size: 1.1vw;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        background-color: #0088CC;
+    }
+    
+    .shelf3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: 45vh;
+        margin-top: 0.5%;
+    }
+    
+    .shelf3 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .shelf4 {
+        display: flex;
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: 10vh;
+        margin-top: -3%;
+    }
+    
+    .shelf4 .textCon {
+        display: flex;
+        width: 30%;
+        height: 100%;
+        margin: auto;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    .shelf4 .textCon p {
+        font-size: 2.1vw;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        margin: auto;
+    }
+    
+    .shelf5 {
+        display: flex;
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: fit-content;
+        margin-top: 3%;
+    }
+    
+    .shelf5 .textCon {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .shelf5 .textCon p {
+        text-align: justify;
+        font-size: 1.2vw;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .infoConXs {
+        display: none;
+    }
+    
+    .shelf6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: 70vh;
+        margin-top: 3%;
+        background-color: #f1f1f1;
+    }
+    
+    .shelf6 .level1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 30%;
+    }
+    
+    .shelf6 .level1 .top {
+        font-size: 1.9vw;
+        font-weight: 700;
+    }
+    
+    .shelf6 .level1 .bottom {
+        font-size: 1.2vw;
+        font-weight: 400;
+        margin-top: 2%;
+    }
+    
+    .shelf6 .level2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        height: 65%;
+    }
+    
+    .shelf6 .level2 .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 100%;
+    }
+    
+    .shelf6 .level2 .column img {
+        width: 100%;
+        height: 55%;
+    }
+    
+    .shelf6 .level2 .column .top {
+        font-size: 1.5vw;
+        font-weight: 700;
+        margin-top: 5%;
+    }
+    
+    .shelf6 .level2 .column .bottom {
+        text-align: center;
+        font-size: 1.1vw;
+        font-weight: 400;
+    }
+    
+    .shelf7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: 30vh;
+        margin-top: 3%;
+    }
+    
+    .shelf7 .top {
+        font-size: 1.7vw;
+        font-weight: 700;
+    }
+    
+    .shelf7 .center {
+        font-size: 1.4vw;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 1%;
+    }
+    
+    .shelf7 .bottom {
+        font-size: 1.2vw;
+        font-weight: 500;
+        color: #ffffff;
+        margin-top: 1%;
+        background-color: #0088CC;
+    }
+    
+    .shelf7 .bottom:hover {
+        color: #000000;
+    }
+    
+    .shelf8 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        left: 5%;
+        width: 90%;
+        height: 20vh;
+        margin-top: 3%;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: #d6d6d6;
+    }
+    
+    .shelf8 .emailUpdatesLink {
+        display: flex;
+        width: 20%;
+        height: 80%;
+        cursor: pointer;
+    }
+    
+    .shelf8 .emailUpdatesLink p {
+        text-align: center;
+        font-size: 1.1vw;
+        font-weight: 700;
+        color: #000000;
+        margin: auto;
+    }
+    
+    .shelf8 .emailUpdatesLink p i {
+        font-size: 0.85vw;
+    }
+    
+    .shelf8 .slogan {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 500;
+        font-family: 'Dancing Script', cursive;
+        color: #000000;
+        margin: auto;
+        cursor: default;
+    }
+    
+    .shelf8 .socialLinks {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 20%;
+        height: 80%;
+    }
+    
+    .shelf8 .socialLinks i {
+        font-size: 1.5vw;
+        cursor: pointer;
+    }
+}
